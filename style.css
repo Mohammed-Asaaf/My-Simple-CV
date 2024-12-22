@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:#09090b;
+    --foreground-color:#fafafa;
+    --card-color:#18181b;
+    --link-color:#27272a;
+    --paragraph-color:#a1a1aa;
+    --primary-color:#84cc16;
+}
+html{
+        scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
+main{
+    width: 100%;
+    max-width: 400px;
+    background-color:var(--card-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 8px;
+}
+main div{
+    position: relative;
+}
+main div img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+main div h1{
+    text-transform: uppercase;
+    color: var(--foreground-color);
+    text-align: center;
+    font-weight: 600;
+}
+main div h2{
+    color: var(--primary-color);
+    margin: 15px auto;
+    text-align: center;
+}
+main div p{
+    color: var(--paragraph-color);
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: center;
+} 
+.profile-links{
+    list-style: none;
+}
+.profile-links li:not(:last-child){
+    margin-bottom: 16px;
+}
+.profile-links li a{
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--link-color);
+    color: var(--foreground-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+    transition: all 1s ease-in-out;
+}
+.profile-links li a:hover{
+    color: var(--background-color);
+    background-color: var(--foreground-color);
+}
